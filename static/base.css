@@ -1,0 +1,14 @@
+.bored_header_logo {
+    margin: 2rem 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.bored_header_button {
+    margin-bottom: 2rem;
+}
+
+.bored_footer_button {
+    font-size: .8rem;
+    margin: 1.5rem;
+}
