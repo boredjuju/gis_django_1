@@ -9,14 +9,13 @@
 
         <form action="/accounts/hello_world/" method="post">
             {% csrf_token %}
+            <input type="text" name="hello_world_input">
             <input type="submit" class="btn btn-dark rounded-pill px-4" >
         </form>
 
-
-        <h3>{{ text }}</h3>
-
-
-
+        {% if hello_world_output %}
+            <h3>{{ hello_world_output.text }}</h3>
+        {% endif %}
 
     </div>
 
