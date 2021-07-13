@@ -5,7 +5,7 @@
 
 
     <div style="margin: 2rem; text-align: center">
-        <h1 style="font-family: 'Shadows Into Light'" class="m-5">hello world list</h1>
+        <h1 style="font-family: 'Shadows Into Light', cursive" class="m-5">hello world list</h1>
 
         <form action="/accounts/hello_world/" method="post">
             {% csrf_token %}
@@ -15,8 +15,8 @@
                   Button
               </button>
             </div>
-            <input type="text" name="hello_world_input">
-            <input type="submit" class="btn btn-dark rounded-pill px-4" >
+{#            <input type="text" name="hello_world_input">#}
+{#            <input type="submit" class="btn btn-dark rounded-pill px-4" >#}
         </form>
 
         {% if hello_world_list %}
