@@ -10,7 +10,6 @@
         }
 
         .container div {
-            {#box-shadow: 0 0 .5rem grey;#}
           display: flex;
           justify-content: center;
           align-items: center;
@@ -24,11 +23,14 @@
             object-fit: cover;
             border-radius: 1rem;
         }
+
     </style>
 
 
     <div class="container my-4">
+
         {% for project in project_list %}
+
             <div>
                 <a href="{% url 'projectapp:detail' pk=project.pk %}">
                     <img src="{{ project.image.url }}"
@@ -36,21 +38,21 @@
                 </a>
                 <span class="m-2 NNS_B">{{ project.name | truncatechars:10 }}</span>
             </div>
-        {% endfor %}
-    </div>
 
+        {% endfor %}
+
+    </div>
 
     <script src="{% static 'js/magicgrid.js' %}"></script>
 
     {% include 'snippets/pagination.html' %}
 
     <div class="text-center my-5">
-        <a href="{% url 'articleapp:create' %}"
+        <a href="{% url 'projectapp:create' %}"
            class="btn btn-outline-dark rounded-pill px-5">
             Create Project
         </a>
     </div>
-
 
 
 {% endblock %}
