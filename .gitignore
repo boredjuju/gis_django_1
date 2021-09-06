@@ -85,3 +85,8 @@ media/
 
 staticfiles/
 
+gis_django.pem
+
+gis_django_gcp
+gis_django_gcp.pub
+
