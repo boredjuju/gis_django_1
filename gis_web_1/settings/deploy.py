@@ -1,3 +1,6 @@
+from .base import *
+
+
 local_env = open(os.path.join(BASE_DIR, '.env'))
 env_list = dict()
 
