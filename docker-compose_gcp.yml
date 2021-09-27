@@ -9,7 +9,7 @@ services:
     networks:
       - gis_network
     volumes:
-      - /home/ubuntu/nginx.conf:/etc/nginx/nginx.conf
+      - /home/hy9498/nginx.conf:/etc/nginx/nginx.conf
       - gis_static:/data/static/
       - gis_media:/data/media/
 
@@ -29,7 +29,4 @@ networks:
 volumes:
   gis_static:
   gis_media:
-
-
-
 
